@@ -4,7 +4,7 @@ import TodoList from "../todoList";
 import axios from "axios"
 import TodoForm from "../todoForm";
 import { useEffect, useState } from "react";
-
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
 const DUMMY_TODOS = [
 ]
 
@@ -21,7 +21,7 @@ const Home = () => {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://localhost:3001/todo/new',
+            url: API_URL+'/todo/new',
             headers: { 
               'Content-Type': 'application/json'
             },

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from "axios";
 import Image from 'next/image';
 import axiosRetry from 'axios-retry';
-
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
 axiosRetry(axios, { retries: 3 });
 
 const TodoList = ({ todos, setTodos }) => {
@@ -13,7 +13,7 @@ const TodoList = ({ todos, setTodos }) => {
     let config = {
       method: 'put',
       maxBodyLength: Infinity,
-      url: 'http://localhost:3001/todo/'+id,
+      url: API_URL+"/todo/"+id,
       headers: {},
       data:{status:status},
     };
@@ -37,7 +37,7 @@ const TodoList = ({ todos, setTodos }) => {
   }
 
   const deleteTodoHandler = async(id) => {
-    const response = await axios.delete("http://localhost:3001/todo/"+id);
+    const response = await axios.delete(API_URL+"/todo/"+id);
     if(response.status == 200)
     {
       setDetailedTodo({});
