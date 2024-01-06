@@ -1,0 +1,14 @@
+{
+  "name": "to_do_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client:start": "cd to-do && npm start",
+    "client:build": "cd to-do && npm run build",
+    "server:start": "cd to-do-server && MONGO_USER=Moeez MONGO_PWD=Moeez786 node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
