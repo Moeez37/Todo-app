@@ -13,19 +13,7 @@ The ToDo app is a simple application allowing users to manage tasks efficiently.
 - Update task details or completion status.
 - Delete tasks from the list.
 
-## File Structure
 
-project-root/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── app.js
-└── frontend/
-    ├── pages/
-    ├── components/
-    ├── styles/
-    └── public/
 
 
 ### Backend (`/backend`)
@@ -71,3 +59,17 @@ Ensure to set up environment variables:
 
 - `/todo`: GET, POST
 - `/api/tasks/:id`: PUT, DELETE
+  
+## File Structure
+````markdown
+project-root/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── app.js
+└── frontend/
+    ├── pages/
+    ├── components/
+    ├── styles/
+    └── public/
