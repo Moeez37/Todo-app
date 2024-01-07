@@ -1,0 +1,9 @@
+{
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/todo", "dest": "https://todo-app-c8np.vercel.app/todo" },
+      { "src": "/todo/new", "dest": "https://todo-app-c8np.vercel.app/todo/new" },
+      { "src": "/todo/:id", "dest": "https://todo-app-c8np.vercel.app/todo/:id" }
+    ]
+  }
+  
