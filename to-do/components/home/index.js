@@ -43,7 +43,7 @@ const Home = () => {
             let config = {
                 method: 'get',
                 maxBodyLength: Infinity,
-                url: 'http://localhost:3001/todo',
+                url: NEXT_PUBLIC_API_URL+'/todo',
                 headers: { }
               };
               
