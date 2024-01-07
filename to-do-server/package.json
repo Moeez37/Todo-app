@@ -4,7 +4,7 @@
   "description": "server with crud operation fron todo app",
   "main": "index.js",
   "scripts": {
-    "start":"MONGO_USER=Moeez MONGO_PWD=Moeez786 node index.js",
+    "install":"MONGO_USER=Moeez MONGO_PWD=Moeez786 node index.js",
     "test": "node index.js",
     "dev":"nodemon index.js"
   },
